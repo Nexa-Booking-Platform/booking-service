@@ -1,5 +1,8 @@
 package com.bookingsystem.booking_service.dto;
 
+import lombok.Data;
+
+@Data
 public class BookingRequest {
 
     private String propertyId;
