@@ -1,4 +1,4 @@
-package com.bookingsystem.booking_service.kafka;
+package com.bookingsystem.booking_service.event;
 
 import lombok.Getter;
 

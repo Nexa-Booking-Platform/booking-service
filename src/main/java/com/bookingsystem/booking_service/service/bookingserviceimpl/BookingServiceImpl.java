@@ -3,7 +3,7 @@ package com.bookingsystem.booking_service.service.bookingserviceimpl;
 import com.bookingsystem.booking_service.dto.BookingRequest;
 import com.bookingsystem.booking_service.entity.Availability;
 import com.bookingsystem.booking_service.entity.Booking;
-import com.bookingsystem.booking_service.kafka.BookingCreatedEvent;
+import com.bookingsystem.booking_service.event.BookingCreatedEvent;
 import com.bookingsystem.booking_service.repository.AvailabilityRepository;
 import com.bookingsystem.booking_service.repository.BookingRepository;
 import com.bookingsystem.booking_service.service.BookingService;
