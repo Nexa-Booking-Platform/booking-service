@@ -6,17 +6,17 @@ spring:
     name: booking-service
 
   config:
-    import: optional:configserver:http://localhost:8888
+    import: optional:configserver:http://${CONFIG_SERVER_USER:configuser}:${CONFIG_SERVER_PASSWORD:configpass}@localhost:8888
 
   datasource:
     url: jdbc:postgresql://localhost:5432/bookings_db
-    username: postgres
-    password: password
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
+    show-sql: false
 
   kafka:
     bootstrap-servers: localhost:9092
