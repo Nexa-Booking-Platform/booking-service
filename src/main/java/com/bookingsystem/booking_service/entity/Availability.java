@@ -8,6 +8,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -19,7 +21,7 @@ public class Availability {
     private String id;
 
     private String propertyId;
-    private String date;
+    private LocalDate date;
     private int slotsAvailable;
 
 }
